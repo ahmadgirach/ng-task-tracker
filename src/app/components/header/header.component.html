@@ -1,0 +1,6 @@
+<header>
+  <h2>{{ title }}</h2>
+  <app-button *ngIf="hasRoute('/')" color="{{ showAddTask ? 'red' : 'black' }}"
+    text="{{ showAddTask ? 'Close' : 'Add' }}" [icon]="showAddTask ? faClose : faPlus"
+    (btnClick)="toggleAddTask()"></app-button>
+</header>
